@@ -1,6 +1,5 @@
 # !/usr/bin/env python3
 import csv
-from io import open
 
 
 def read_employees(csv_file_location):
@@ -33,7 +32,7 @@ def process_data(employee_list):
 
 
 employee_list = read_employees(
-    "/mnt/c/Users/gb1609/IdeaProjects/thesis/QwicklabsExcercises/HandlingFiles/data/employees.csv")
+    "../data/employees.csv")
 
 
 def write_report(dictionary, report_file):
@@ -45,4 +44,4 @@ def write_report(dictionary, report_file):
 
 dictionary = process_data(employee_list)
 
-write_report(dictionary, '/mnt/c/Users/gb1609/IdeaProjects/thesis/QwicklabsExcercises/HandlingFiles/data/report.txt')
+write_report(dictionary, '../data/report.txt')
